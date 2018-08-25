@@ -21,4 +21,8 @@ class EnigmaTest < Minitest::Test
    assert_instance_of Date, date
   end
 
+def test_it_has_a_key_by_default
+  assert_equal "54321", @enigma.key
+end
+
 end
