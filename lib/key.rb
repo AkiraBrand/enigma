@@ -1,8 +1,12 @@
 class Key
-  attr_reader :number
+  attr_reader :key
 
-  def initialize(number)
-    @number = number
+  def initialize(key)
+    if @key == nil
+     @key = random_number
+    else
+     @key == key
+    end
   end
 
   def random_number

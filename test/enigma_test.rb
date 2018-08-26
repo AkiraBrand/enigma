@@ -16,16 +16,24 @@ class EnigmaTest < Minitest::Test
     assert_instance_of Enigma, @enigma
   end
 
-  def test_it_has_a_date
-   date = Date.new
-   assert_instance_of Date, date
+  def test_it_starts_with_a_long_character_map
+    expected = [*('a'..'z'), *('0'..'9'), ' ', '.', ',']
+    assert_equal expected, @enigma.character_map
   end
 
-  def test_it_has_a_key_by_default
-    assert_equal "54321", @enigma.key
+  def test_the_random_key_generator_padding_works
+    assert_equal 5, @enigma.key_generator.length
+      binding.pry
   end
 
-  def test_it_has_a_date_argument_default
-    assert_equal Date.today, @enigma.date
+  def test_the_split_keys_hold_stuff
+  
   end
+
+  #
+  # def test_the_key_placement_is_correct_with_given_key
+  #   skip
+  #   assert_equal Integer, @enigma.key_holder[0]
+  # end
+
 end
