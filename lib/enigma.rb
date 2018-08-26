@@ -13,6 +13,7 @@ class Enigma
   def encrypt (message, key = key_generator, date = Date.today)
     @split_keys << key.chars
 
+
   end
 
   def key_generator
@@ -20,7 +21,11 @@ class Enigma
   end
 
   def key_holder
-    @split_keys.join[0..1]
+    held_keys = []
+    held_keys << @split_keys.join[0..1]
+    held_keys << @split_keys.join[1..2]
+    held_keys << @split_keys.join[2..3]
+    held_keys << @split_keys.join[3..4]
   end
 
 end

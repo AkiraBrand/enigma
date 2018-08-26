@@ -26,14 +26,11 @@ class EnigmaTest < Minitest::Test
       binding.pry
   end
 
-  def test_the_split_keys_hold_stuff
-  
+  def test_the_key_holder_holds_a_given_key
+    @enigma.encrypt("hello", "12345")
+    expected = ["12", "23", "34", "45"]
+    assert_equal expected, @enigma.key_holder
   end
 
-  #
-  # def test_the_key_placement_is_correct_with_given_key
-  #   skip
-  #   assert_equal Integer, @enigma.key_holder[0]
-  # end
 
 end
