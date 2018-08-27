@@ -17,9 +17,14 @@ class KeyTest < Minitest::Test
     assert_equal 5, key.random_number.length
   end
 
-  def test_a_rotation
-    key = Key.new("12344")
-    assert_equal ["12"], key.encrypt[0] 
+  def test_it_generates_random_number_by_default
+    key = Key.new()
 
   end
+
+  # def test_a_rotation
+  #   key = Key.new("12344")
+  #   assert_equal ["12"], key.encrypt[0]
+  #
+  # end
 end
