@@ -1,0 +1,48 @@
+{
+  "Unit Tests": {
+    "coverage": {
+      "/Users/ruthbrand/turing/1module2.0/projects/enigma/test/test_helper.rb": [
+        1,
+        1
+      ],
+      "/Users/ruthbrand/turing/1module2.0/projects/enigma/lib/enigma.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        4,
+        4,
+        null,
+        null,
+        1,
+        2,
+        2,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1535311145
+  }
+}
