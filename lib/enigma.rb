@@ -28,8 +28,12 @@ attr_reader :character_map,
     @held_keys << @split_keys.join[3..4]
   end
 
-  def format_random_date
-
+  def last_four
+    string_date = @date.strftime("%d%m%y")
+    integer_date = string_date.to_i
+    squared_date = integer_date ** 2
+    squared_date.to_s[-4..-1]
   end
+
 
 end
