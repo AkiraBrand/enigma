@@ -35,4 +35,18 @@ class EnigmaTest < Minitest::Test
     assert_equal "9124", @enigma.last_four
   end
 
+  def test_can_turn_offset_into_integers
+    @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
+    assert_equal = [9, 1, 2, 4], @enigma.offset
+  end
+
+  def test_it_turns_key_array_into_integers
+    @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
+    assert_equal [12, 23, 34, 45], @enigma.key_array
+  end
+
+  def test_it_a_rotations
+    @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
+    assert_equal [21, 24, 36, 49] @enigma.rotate
+  end
 end
