@@ -21,11 +21,11 @@ attr_reader :character_map,
   end
 
   def key_holder
-    @held_keys = []
-    @held_keys << @split_keys.join[0..1]
-    @held_keys << @split_keys.join[1..2]
-    @held_keys << @split_keys.join[2..3]
-    @held_keys << @split_keys.join[3..4]
+    held_keys = []
+    held_keys << @split_keys.join[0..1]
+    held_keys << @split_keys.join[1..2]
+    held_keys << @split_keys.join[2..3]
+    held_keys << @split_keys.join[3..4]
   end
 
   def last_four
@@ -65,11 +65,14 @@ attr_reader :character_map,
     end
   end
 
-  def rotate
-    @final_rotation = []
-    @final_rotation << offset[0] + key_array[0]
-    @final_rotation << offset[1] + key_array[1]
-    @final_rotation << offset[2] + key_array[2]
-    @final_rotation << offset[3] + key_array[3]
+  def where_to_rotate
+    final_rotation = []
+    final_rotation << (offset[0] + key_array[0])
+    final_rotation << (offset[1] + key_array[1])
+    final_rotation << (offset[2] + key_array[2])
+    final_rotation << (offset[3] + key_array[3])
   end
+
+
+
 end

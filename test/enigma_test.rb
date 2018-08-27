@@ -47,6 +47,6 @@ class EnigmaTest < Minitest::Test
 
   def test_it_a_rotations
     @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
-    assert_equal [21, 24, 36, 49] @enigma.rotate
+    assert_equal [21, 24, 36, 49], @enigma.where_to_rotate
   end
 end
