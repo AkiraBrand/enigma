@@ -45,8 +45,22 @@ class EnigmaTest < Minitest::Test
     assert_equal [12, 23, 34, 45], @enigma.key_array
   end
 
-  def test_it_a_rotations
+  def test_where_to_rotate_works
     @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
-    assert_equal [21, 24, 36, 49], @enigma.where_to_rotate
+          expected = {
+          "a" => (21),
+          "b" => (24),
+          "c" => (36),
+          "d" => (49)
+          }
+         assert_equal expected, @enigma.where_to_rotate
   end
+
+  def test_it_can_slice_message_into_fours
+    @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
+    assert_equal["h",ll][o],
+  end
+
+  end
+
 end
