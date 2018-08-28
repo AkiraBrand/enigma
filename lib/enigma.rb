@@ -35,6 +35,28 @@ attr_reader :character_map,
     squared_date.to_s[-4..-1]
   end
 
+  def offset
+    offset = last_four.chars
+    offset.map do |number|
+      number.to_i
+    end
+  end
+
+  def key_array
+    key_array = key_holder.map do |key|
+      key.to_i
+    end
+  end
+
+  def rotate
+    @final_rotation = []
+    @final_rotation << (offset[0] + key_array[0])
+    @final_rotation << (offset[1] + key_array[1])
+    @final_rotation << (offset[2] + key_array[2])
+    @final_rotation << (offset[3] + key_array[3])
+  end
+end
+
 #  charred = last_four.chars  = "9124"
 #  key_holder = ["12", "23", "34", "45"]
 #
@@ -51,25 +73,3 @@ attr_reader :character_map,
 #
 # a_rotation = key_integer[0] + offset_integer[0]
 # a_rotation = 21
-
-  def offset
-    offset = last_four.chars
-    offset.map do |number|
-      number.to_i
-    end
-  end
-
-  def key_array
-    key_array = key_holder.map do |key|
-      key.to_i
-    end
-  end
-
-  def rotate
-    @final_rotation = []
-    @final_rotation << offset[0] + key_array[0]
-    @final_rotation << offset[1] + key_array[1]
-    @final_rotation << offset[2] + key_array[2]
-    @final_rotation << offset[3] + key_array[3]
-  end
-end
