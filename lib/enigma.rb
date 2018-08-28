@@ -14,6 +14,7 @@ attr_reader :character_map,
   def encrypt(message, key = key_generator, date = Date.today)
     @split_keys = key.chars
     @date = date
+    @message = message.chars
   end
 
   def key_generator
@@ -48,14 +49,22 @@ attr_reader :character_map,
     end
   end
 
-  def where_to_rotate
-    {
-      "a" => (offset[0] + key_array[0]),
-      "b" => (offset[1] + key_array[1]),
-      "c" => (offset[2] + key_array[2]),
-      "d" => (offset[3] + key_array[3])
-    }
-  end
+
+  # def where_to_rotate
+  #   {
+  #     "a" => (offset[0] + key_array[0]),
+  #     "b" => (offset[1] + key_array[1]),
+  #     "c" => (offset[2] + key_array[2]),
+  #     "d" => (offset[3] + key_array[3])
+  #   }
+  # end
+  #
+  # def slice_it
+  #   @message.each_slice(4) do |letter|
+  #     p letter
+  #   end
+  # end
+
 
 
 end

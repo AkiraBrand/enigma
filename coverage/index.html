@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-28T14:26:54-06:00">2018-08-28T14:26:54-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-28T15:44:03-06:00">2018-08-28T15:44:03-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">100.0%</span></span>
+    (<span class="covered_percent"><span class="green">97.56%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.12
+         5.47
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>37</b> relevant lines. 
-    <span class="green"><b>37</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <b>41</b> relevant lines. 
+    <span class="green"><b>40</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,17 +51,17 @@
     <tbody>
       
       <tr>
-        <td class="strong"><a href="#c199e6aac2c814df98ec5f344f36682d4fd5e223" class="src_link" title="lib/enigma.rb">lib/enigma.rb</a></td>
-        <td class="green strong">100.0 %</td>
-        <td>61</td>
-        <td>35</td>
-        <td>35</td>
-        <td>0</td>
-        <td>4.3</td>
+        <td class="strong"><a href="#268780b845a7d1c1838846f48adfc4030739fb39" class="src_link" title="lib/enigma.rb">lib/enigma.rb</a></td>
+        <td class="green strong">97.44 %</td>
+        <td>70</td>
+        <td>39</td>
+        <td>38</td>
+        <td>1</td>
+        <td>5.7</td>
       </tr>
       
       <tr>
-        <td class="strong"><a href="#69f7a5c6c5b2ab2000a4603edebd40ce155967ea" class="src_link" title="test/test_helper.rb">test/test_helper.rb</a></td>
+        <td class="strong"><a href="#d9c486e831fe81e4e92d0922c21efce864ae090e" class="src_link" title="test/test_helper.rb">test/test_helper.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>2</td>
         <td>2</td>
@@ -86,14 +86,14 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="c199e6aac2c814df98ec5f344f36682d4fd5e223">
+        <div class="source_table" id="268780b845a7d1c1838846f48adfc4030739fb39">
   <div class="header">
     <h3>lib/enigma.rb</h3>
-    <h4><span class="green">100.0 %</span> covered</h4>
+    <h4><span class="green">97.44 %</span> covered</h4>
     <div>
-      <b>35</b> relevant lines. 
-      <span class="green"><b>35</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>39</b> relevant lines. 
+      <span class="green"><b>38</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
   
@@ -154,14 +154,14 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="10">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
           
           <code class="ruby">    @character_map = [*(&#39;a&#39;..&#39;z&#39;), *(&#39;0&#39;..&#39;9&#39;), &#39; &#39;, &#39;.&#39;,&#39;,&#39;]</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="11">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="4" data-linenumber="11">
+          <span class="hits">4</span>
           
           <code class="ruby">    @split_keys = []</code>
         </li>
@@ -184,283 +184,337 @@
           <code class="ruby">  def encrypt(message, key = key_generator, date = Date.today)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="15">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
           
           <code class="ruby">    @split_keys = key.chars</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    @date = date</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @message = message.chars</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="19">
           
-          <code class="ruby">  def key_generator</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">    rand(00000..99999).to_s.rjust(5, &#39;0&#39;)</code>
+          <code class="ruby">  def key_generator</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="missed" data-hits="0" data-linenumber="21">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    rand(00000..99999).to_s.rjust(5, &#39;0&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
           <code class="ruby">  def key_holder</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="24">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="25">
+          <span class="hits">9</span>
           
           <code class="ruby">    held_keys = []</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="25">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="26">
+          <span class="hits">9</span>
           
           <code class="ruby">    held_keys &lt;&lt; @split_keys.join[0..1]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="26">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="27">
+          <span class="hits">9</span>
           
           <code class="ruby">    held_keys &lt;&lt; @split_keys.join[1..2]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="27">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="28">
+          <span class="hits">9</span>
           
           <code class="ruby">    held_keys &lt;&lt; @split_keys.join[2..3]</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="28">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="29">
+          <span class="hits">9</span>
           
           <code class="ruby">    held_keys &lt;&lt; @split_keys.join[3..4]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
           <code class="ruby">  def last_four</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="32">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="33">
+          <span class="hits">9</span>
           
           <code class="ruby">    string_date = @date.strftime(&quot;%d%m%y&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="33">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="34">
+          <span class="hits">9</span>
           
           <code class="ruby">    integer_date = string_date.to_i</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="34">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="35">
+          <span class="hits">9</span>
           
           <code class="ruby">    squared_date = integer_date ** 2</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="35">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="9" data-linenumber="36">
+          <span class="hits">9</span>
           
           <code class="ruby">    squared_date.to_s[-4..-1]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="36">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="37">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="38">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
           <code class="ruby">  def offset</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="39">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="9" data-linenumber="40">
+          <span class="hits">9</span>
           
           <code class="ruby">    offset = last_four.chars</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="40">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="9" data-linenumber="41">
+          <span class="hits">9</span>
           
           <code class="ruby">    offset.map do |number|</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="41">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="36" data-linenumber="42">
+          <span class="hits">36</span>
           
           <code class="ruby">      number.to_i</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="42">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="46">
           <span class="hits">1</span>
           
           <code class="ruby">  def key_array</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="46">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="8" data-linenumber="47">
+          <span class="hits">8</span>
           
           <code class="ruby">    key_array = key_holder.map do |key|</code>
         </li>
       
-        <li class="covered" data-hits="20" data-linenumber="47">
-          <span class="hits">20</span>
+        <li class="covered" data-hits="32" data-linenumber="48">
+          <span class="hits">32</span>
           
           <code class="ruby">      key.to_i</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="51">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="51">
+        <li class="covered" data-hits="1" data-linenumber="52">
           <span class="hits">1</span>
           
-          <code class="ruby">  def where_to_rotate</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
-          <code class="ruby">    {</code>
+          <code class="ruby">  # def where_to_rotate</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="54">
+          <span class="hits">2</span>
           
-          <code class="ruby">      &quot;a&quot; =&gt; (offset[0] + key_array[0]),</code>
+          <code class="ruby">  #   {</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="55">
+          <span class="hits">2</span>
           
-          <code class="ruby">      &quot;b&quot; =&gt; (offset[1] + key_array[1]),</code>
+          <code class="ruby">  #     &quot;a&quot; =&gt; (offset[0] + key_array[0]),</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="56">
+          <span class="hits">2</span>
           
-          <code class="ruby">      &quot;c&quot; =&gt; (offset[2] + key_array[2]),</code>
+          <code class="ruby">  #     &quot;b&quot; =&gt; (offset[1] + key_array[1]),</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="57">
+          <span class="hits">2</span>
           
-          <code class="ruby">      &quot;d&quot; =&gt; (offset[3] + key_array[3])</code>
+          <code class="ruby">  #     &quot;c&quot; =&gt; (offset[2] + key_array[2]),</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="58">
+          <span class="hits">2</span>
           
-          <code class="ruby">    }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
-          
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">  #     &quot;d&quot; =&gt; (offset[3] + key_array[3])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  #   }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="61">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="covered" data-hits="3" data-linenumber="62">
+          <span class="hits">3</span>
+          
+          <code class="ruby">  # def slice_it</code>
+        </li>
+      
+        <li class="covered" data-hits="6" data-linenumber="63">
+          <span class="hits">6</span>
+          
+          <code class="ruby">  #   @message.each_slice(4) do |letter|</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="64">
+          
+          
+          <code class="ruby">  #     p letter</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="65">
+          
+          
+          <code class="ruby">  #   end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="61">
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="69">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="70">
           
           
           <code class="ruby">end</code>
@@ -471,7 +525,7 @@
 </div>
 
       
-        <div class="source_table" id="69f7a5c6c5b2ab2000a4603edebd40ce155967ea">
+        <div class="source_table" id="d9c486e831fe81e4e92d0922c21efce864ae090e">
   <div class="header">
     <h3>test/test_helper.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
