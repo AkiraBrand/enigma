@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-27T15:27:07-06:00">2018-08-27T15:27:07-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-08-28T12:31:43-06:00">2018-08-28T12:31:43-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.69
+         4.12
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>2</b> files in total.
-    <b>33</b> relevant lines. 
-    <span class="green"><b>33</b> lines covered</span> and
+    <b>37</b> relevant lines. 
+    <span class="green"><b>37</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,11 +53,11 @@
       <tr>
         <td class="strong"><a href="#268780b845a7d1c1838846f48adfc4030739fb39" class="src_link" title="lib/enigma.rb">lib/enigma.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>71</td>
-        <td>31</td>
-        <td>31</td>
+        <td>217</td>
+        <td>35</td>
+        <td>35</td>
         <td>0</td>
-        <td>2.8</td>
+        <td>4.3</td>
       </tr>
       
       <tr>
@@ -91,8 +91,8 @@
     <h3>lib/enigma.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>31</b> relevant lines. 
-      <span class="green"><b>31</b> lines covered</span> and
+      <b>35</b> relevant lines. 
+      <span class="green"><b>35</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -238,34 +238,34 @@
           <code class="ruby">  def key_holder</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="24">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="24">
+          <span class="hits">6</span>
           
-          <code class="ruby">    @held_keys = []</code>
+          <code class="ruby">    held_keys = []</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="25">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="25">
+          <span class="hits">6</span>
           
-          <code class="ruby">    @held_keys &lt;&lt; @split_keys.join[0..1]</code>
+          <code class="ruby">    held_keys &lt;&lt; @split_keys.join[0..1]</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="26">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="26">
+          <span class="hits">6</span>
           
-          <code class="ruby">    @held_keys &lt;&lt; @split_keys.join[1..2]</code>
+          <code class="ruby">    held_keys &lt;&lt; @split_keys.join[1..2]</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="27">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="27">
+          <span class="hits">6</span>
           
-          <code class="ruby">    @held_keys &lt;&lt; @split_keys.join[2..3]</code>
+          <code class="ruby">    held_keys &lt;&lt; @split_keys.join[2..3]</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="28">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="28">
+          <span class="hits">6</span>
           
-          <code class="ruby">    @held_keys &lt;&lt; @split_keys.join[3..4]</code>
+          <code class="ruby">    held_keys &lt;&lt; @split_keys.join[3..4]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
@@ -286,26 +286,26 @@
           <code class="ruby">  def last_four</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="32">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="32">
+          <span class="hits">6</span>
           
           <code class="ruby">    string_date = @date.strftime(&quot;%d%m%y&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="33">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="33">
+          <span class="hits">6</span>
           
           <code class="ruby">    integer_date = string_date.to_i</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="34">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="34">
+          <span class="hits">6</span>
           
           <code class="ruby">    squared_date = integer_date ** 2</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="35">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="6" data-linenumber="35">
+          <span class="hits">6</span>
           
           <code class="ruby">    squared_date.to_s[-4..-1]</code>
         </li>
@@ -430,20 +430,20 @@
           <code class="ruby">  def offset</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="56">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="56">
+          <span class="hits">5</span>
           
           <code class="ruby">    offset = last_four.chars</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="57">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="57">
+          <span class="hits">5</span>
           
           <code class="ruby">    offset.map do |number|</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="58">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="20" data-linenumber="58">
+          <span class="hits">20</span>
           
           <code class="ruby">      number.to_i</code>
         </li>
@@ -472,14 +472,14 @@
           <code class="ruby">  def key_array</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="63">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="63">
+          <span class="hits">5</span>
           
           <code class="ruby">    key_array = key_holder.map do |key|</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="64">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="20" data-linenumber="64">
+          <span class="hits">20</span>
           
           <code class="ruby">      key.to_i</code>
         </li>
@@ -505,22 +505,898 @@
         <li class="covered" data-hits="1" data-linenumber="68">
           <span class="hits">1</span>
           
-          <code class="ruby">  def rotate</code>
+          <code class="ruby">  def where_to_rotate</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
-          <code class="ruby">    @a_rotation = offset[0] + key_array[0]</code>
+          <code class="ruby">    final_rotation = []</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="70">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    final_rotation &lt;&lt; (offset[0] + key_array[0])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="71">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    final_rotation &lt;&lt; (offset[1] + key_array[1])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="72">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    final_rotation &lt;&lt; (offset[2] + key_array[2])</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="73">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    final_rotation &lt;&lt; (offset[3] + key_array[3])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby"> #  @dictionary = [&quot;a&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby"> #    &quot;b&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby"> #    &quot;c&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby"> #    &quot;d&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"> #    &quot;e&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="81">
+          
+          
+          <code class="ruby"> #    &quot;f&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="82">
+          
+          
+          <code class="ruby"> #    &quot;g&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="83">
+          
+          
+          <code class="ruby"> #    &quot;h&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby"> #    &quot;i&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby"> #    &quot;j&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby"> #    &quot;k&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
+          
+          
+          <code class="ruby"> #    &quot;l&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="88">
+          
+          
+          <code class="ruby"> #    &quot;m&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="89">
+          
+          
+          <code class="ruby"> #    &quot;n&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="90">
+          
+          
+          <code class="ruby"> #    &quot;o&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="91">
+          
+          
+          <code class="ruby"> #    &quot;p&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="92">
+          
+          
+          <code class="ruby"> #    &quot;q&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="93">
+          
+          
+          <code class="ruby"> #    &quot;r&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="94">
+          
+          
+          <code class="ruby"> #    &quot;s&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="95">
+          
+          
+          <code class="ruby"> #    &quot;t&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="96">
+          
+          
+          <code class="ruby"> #    &quot;u&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="97">
+          
+          
+          <code class="ruby"> #    &quot;v&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="98">
+          
+          
+          <code class="ruby"> #    &quot;w&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="99">
+          
+          
+          <code class="ruby"> #    &quot;x&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="100">
+          
+          
+          <code class="ruby"> #    &quot;y&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="101">
+          
+          
+          <code class="ruby"> #    &quot;z&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="102">
+          
+          
+          <code class="ruby"> #    &quot;0&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="103">
+          
+          
+          <code class="ruby"> #    &quot;1&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="104">
+          
+          
+          <code class="ruby"> #    &quot;2&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="105">
+          
+          
+          <code class="ruby"> #    &quot;3&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="106">
+          
+          
+          <code class="ruby"> #    &quot;4&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="107">
+          
+          
+          <code class="ruby"> #    &quot;5&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="108">
+          
+          
+          <code class="ruby"> #    &quot;6&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="109">
+          
+          
+          <code class="ruby"> #    &quot;7&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="110">
+          
+          
+          <code class="ruby"> #    &quot;8&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="111">
+          
+          
+          <code class="ruby"> #    &quot;9&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="112">
+          
+          
+          <code class="ruby"> #    &quot; &quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="113">
+          
+          
+          <code class="ruby"> #    &quot;.&quot;,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="114">
+          
+          
+          <code class="ruby"> #    &quot;,&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="115">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="116">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="117">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="118">
+          
+          
+          <code class="ruby"> #  my_message = &quot;You got this&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="119">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="120">
+          
+          
+          <code class="ruby"> #  my_message.scan(/.{4}/)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="121">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="122">
+          
+          
+          <code class="ruby"> #  my_message.chars</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="123">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="124">
+          
+          
+          <code class="ruby"> #  indexed = []</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="125">
+          
+          
+          <code class="ruby"> #  @character_map.each_with_index do |element, index|</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="126">
+          
+          
+          <code class="ruby"> #    indexed &lt;&lt; index</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="127">
+          
+          
+          <code class="ruby"> #  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="128">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="129">
+          
+          
+          <code class="ruby"> #  indexed = 0,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="130">
+          
+          
+          <code class="ruby"> #  1,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="131">
+          
+          
+          <code class="ruby"> #  2,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="132">
+          
+          
+          <code class="ruby"> #  3,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="133">
+          
+          
+          <code class="ruby"> #  4,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="134">
+          
+          
+          <code class="ruby"> #  5,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="135">
+          
+          
+          <code class="ruby"> #  6,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="136">
+          
+          
+          <code class="ruby"> #  7,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="137">
+          
+          
+          <code class="ruby"> #  8,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="138">
+          
+          
+          <code class="ruby"> #  9,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="139">
+          
+          
+          <code class="ruby"> #  10,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="140">
+          
+          
+          <code class="ruby"> #  11,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="141">
+          
+          
+          <code class="ruby"> #  12,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="142">
+          
+          
+          <code class="ruby"> #  13,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="143">
+          
+          
+          <code class="ruby"> #  14,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="144">
+          
+          
+          <code class="ruby"> #  15,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="145">
+          
+          
+          <code class="ruby"> #  16,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="146">
+          
+          
+          <code class="ruby"> #  17,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="147">
+          
+          
+          <code class="ruby"> #  18,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="148">
+          
+          
+          <code class="ruby"> #  19,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="149">
+          
+          
+          <code class="ruby"> #  20,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="150">
+          
+          
+          <code class="ruby"> #  21,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="151">
+          
+          
+          <code class="ruby"> #  22,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="152">
+          
+          
+          <code class="ruby"> #  23,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="153">
+          
+          
+          <code class="ruby"> #  24,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="154">
+          
+          
+          <code class="ruby"> #  25,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="155">
+          
+          
+          <code class="ruby"> #  26,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="156">
+          
+          
+          <code class="ruby"> #  27,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="157">
+          
+          
+          <code class="ruby"> #  28,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="158">
+          
+          
+          <code class="ruby"> #  29,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="159">
+          
+          
+          <code class="ruby"> #  30,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="160">
+          
+          
+          <code class="ruby"> #  31,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="161">
+          
+          
+          <code class="ruby"> #  32,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="162">
+          
+          
+          <code class="ruby"> #  33,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="163">
+          
+          
+          <code class="ruby"> #  34,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="164">
+          
+          
+          <code class="ruby"> #  35,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="165">
+          
+          
+          <code class="ruby"> #  36,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="166">
+          
+          
+          <code class="ruby"> #  37,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="167">
+          
+          
+          <code class="ruby"> #  38</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="168">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="169">
+          
+          
+          <code class="ruby"> # @character_map.zip(indexed)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="170">
+          
+          
+          <code class="ruby"> # [[&quot;a&quot;, 0],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="171">
+          
+          
+          <code class="ruby"> # [&quot;b&quot;, 1],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="172">
+          
+          
+          <code class="ruby"> # [&quot;c&quot;, 2],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="173">
+          
+          
+          <code class="ruby"> # [&quot;d&quot;, 3],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="174">
+          
+          
+          <code class="ruby"> # [&quot;e&quot;, 4],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="175">
+          
+          
+          <code class="ruby"> # [&quot;f&quot;, 5],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="176">
+          
+          
+          <code class="ruby"> # [&quot;g&quot;, 6],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="177">
+          
+          
+          <code class="ruby"> # [&quot;h&quot;, 7],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="178">
+          
+          
+          <code class="ruby"> # [&quot;i&quot;, 8],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="179">
+          
+          
+          <code class="ruby"> # [&quot;j&quot;, 9],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="180">
+          
+          
+          <code class="ruby"> # [&quot;k&quot;, 10],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="181">
+          
+          
+          <code class="ruby"> # [&quot;l&quot;, 11],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="182">
+          
+          
+          <code class="ruby"> # [&quot;m&quot;, 12],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="183">
+          
+          
+          <code class="ruby"> # [&quot;n&quot;, 13],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="184">
+          
+          
+          <code class="ruby"> # [&quot;o&quot;, 14],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="185">
+          
+          
+          <code class="ruby"> # [&quot;p&quot;, 15],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="186">
+          
+          
+          <code class="ruby"> # [&quot;q&quot;, 16],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="187">
+          
+          
+          <code class="ruby"> # [&quot;r&quot;, 17],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="188">
+          
+          
+          <code class="ruby"> # [&quot;s&quot;, 18],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="189">
+          
+          
+          <code class="ruby"> # [&quot;t&quot;, 19],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="190">
+          
+          
+          <code class="ruby"> # [&quot;u&quot;, 20],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="191">
+          
+          
+          <code class="ruby"> # [&quot;v&quot;, 21],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="192">
+          
+          
+          <code class="ruby"> # [&quot;w&quot;, 22],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="193">
+          
+          
+          <code class="ruby"> # [&quot;x&quot;, 23],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="194">
+          
+          
+          <code class="ruby"> # [&quot;y&quot;, 24],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="195">
+          
+          
+          <code class="ruby"> # [&quot;z&quot;, 25],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="196">
+          
+          
+          <code class="ruby"> # [&quot;0&quot;, 26],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="197">
+          
+          
+          <code class="ruby"> # [&quot;1&quot;, 27],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="198">
+          
+          
+          <code class="ruby"> # [&quot;2&quot;, 28],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="199">
+          
+          
+          <code class="ruby"> # [&quot;3&quot;, 29],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="200">
+          
+          
+          <code class="ruby"> # [&quot;4&quot;, 30],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="201">
+          
+          
+          <code class="ruby"> # [&quot;5&quot;, 31],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="202">
+          
+          
+          <code class="ruby"> # [&quot;6&quot;, 32],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="203">
+          
+          
+          <code class="ruby"> # [&quot;7&quot;, 33],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="204">
+          
+          
+          <code class="ruby"> # [&quot;8&quot;, 34],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="205">
+          
+          
+          <code class="ruby"> # [&quot;9&quot;, 35],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="206">
+          
+          
+          <code class="ruby"> # [&quot; &quot;, 36],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="207">
+          
+          
+          <code class="ruby"> # [&quot;.&quot;, 37],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="208">
+          
+          
+          <code class="ruby"> # [&quot;,&quot;, 38]]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="209">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="210">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="211">
+          
+          
+          <code class="ruby"> # (rotation + offset) % 39 = the index of letter &quot;A&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="212">
+          
+          
+          <code class="ruby"> # (rotation + offset) % 39 = the index of letter &quot;B&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="213">
+          
+          
+          <code class="ruby"> # (rotation + offset) % 39 = the index of letter &quot;C&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="214">
+          
+          
+          <code class="ruby"> # (rotation + offset) % 39 = the index of letter &quot;A&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="215">
+          
+          
+          <code class="ruby"> #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="216">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="217">
           
           
           <code class="ruby">end</code>
