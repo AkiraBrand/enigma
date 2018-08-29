@@ -59,7 +59,7 @@ class EnigmaTest < Minitest::Test
   def test_it_can_slice_message_into_fours
     @enigma.encrypt("hello", "12345", Date.new(2018, 8, 27))
     require "pry"; binding.pry
-    assert_equal ["h", "e", "l", "l"]["o"], @enigma.slice_it
+    assert_equal ["h", "e", "l", "l"] ["o"], @enigma.slice_it
   end
 
   # def test_it_can_rotate_h_twenty_one_times
